@@ -4,7 +4,7 @@
 
 2 A Desenvolvimento de Sistemas
 
-Guilherme Ribeiro 
+Guilherme Ribeiro &&
 Eduardo Andreolli
 
 
