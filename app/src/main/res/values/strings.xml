@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Street Fighter Guide</string>
+
+
+    <!-- Hall Strings -->
+
+    <string name="primary_hall">Entrar</string>
+    <string name="login">Login</string>
+    <string name="register">Registrar</string>
+
+    <!-- Login -->
+    <string name="email">Nome:</string>
+    <string name="password">Senha:</string>
+    <string name="repassword">Confirme sua Senha:</string>
+    <string name="cad">Cadastrar</string>
+    <string name="log_on">Logar</string>
+    <string name="save">Salvar Externamente</string>
+    <string name="save_2">Salvar Internamente</string>
+
+    <!-- Header File -->
+    <string name="home">Home</string>
+    <string name="map">Jogos</string>
+    <string name="events">Campeonatos</string>
+    <string name="notification">Notificações</string>
+    <string name="extern">Externos</string>
+    <string name="share">Compartilhar</string>
+    <string name="buy">Comprar</string>
+
+    <!-- Menu -->
+    <string name="more">+ MORE</string>
+    <string name="wel">Hello</string>
+    <string name="txt1">NEWS STREET FIGHTER</string>
+    <string name="txt2">25 TH ANNIVERSARY</string>
+    <string name="txt3">GAMES</string>
+    <string name="txt4">Personagens</string>
+    <string name="txt5">Chun-Li</string>
+    <string name="txt6">Ryu</string>
+    <string name="txt7">Menat</string>
+
+    <string name="radar">Veja se Ryu está próximo</string>
+    <string name="proximity_1">Ele está próximo</string>
+    <string name="proximity_2">Ele aparentemente não está próximo</string>
+    <string name="raio">Raio</string>
+    <string name="close">Fugir</string>
+    <string name="voltar">Voltar</string>
+    <string name="notifications">Notificações</string>
+    <string name="exone">Aniversário de 35 anos</string>
+    <string name="extwo">Street Fighter Dois é novamente aclamado</string>
+
+</resources>

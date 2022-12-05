@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StreetFighterGuide" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_main</item>
+        <item name="colorPrimaryVariant">@color/black_main</item>
+        <item name="colorOnPrimary">@color/purple_more</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_panel</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

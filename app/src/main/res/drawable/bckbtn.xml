@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:innerRadius="20dp"
+    android:thickness="0dp">
+
+    <gradient
+        android:startColor="@color/btn_bluecks"
+        android:endColor="@color/btn_purple"
+        android:angle="180"/>
+
+    <corners
+        android:radius="30dp"/>
+</shape>

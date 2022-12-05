@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HallActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/wall"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/black_transparent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/linear_hall"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/logo"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/flipbck"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rect"
+                android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/primary_hall"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/arcademain"
+                    android:textColor="@color/white_carbon"
+                    android:elevation="20dp"
+                    android:shadowColor="@color/black_main"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"/>
+
+            <ImageView
+                android:id="@+id/none"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ryu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <Button
+                        android:onClick="register"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/btn_secondary"
+                        android:text="@string/register"
+                        android:textColor="@color/white_carbon"
+                        android:fontFamily="@font/arcaderounded"
+                        android:shadowColor="@color/black_main"
+                        android:shadowDx="5"
+                        android:shadowDy="2"
+                        android:shadowRadius="4"/>
+
+                    <Button
+                        android:onClick="login"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:backgroundTint="@color/btn_secondary"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/login"
+                        android:textColor="@color/orange_main"
+                        android:shadowColor="@color/black_main"
+                        android:fontFamily="@font/arcaderounded"
+                        android:shadowDx="5"
+                        android:shadowDy="2"
+                        android:shadowRadius="4"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_email_24" />
+
+                        <ImageView
+                            android:layout_marginLeft="10pt"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

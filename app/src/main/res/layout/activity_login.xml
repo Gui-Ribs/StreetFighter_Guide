@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/topbar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bcklogin"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bcklogs"/>
+
+
+            <ImageView
+                android:layout_width="210dp"
+                android:layout_height="160dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/logo" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="-20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corners"
+                android:elevation="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bckstars"/>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="21dp">
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/cornersilver"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/login"
+                            android:textColor="@color/white_carbon"
+                            android:fontFamily="@font/arcademain"
+                            android:textSize="9pt"
+                            android:shadowColor="@color/black_main"
+                            android:shadowDx="8"
+                            android:shadowDy="2"
+                            android:shadowRadius="4"/>
+
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:padding="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/email"
+                                        android:textColor="@color/white_carbon"
+                                        android:fontFamily="@font/arcaderounded"
+                                        android:textSize="13dp"
+                                        android:shadowColor="@color/black_main"
+                                        android:shadowDx="5"
+                                        android:shadowDy="2"
+                                        android:shadowRadius="4"/>
+
+                                    <EditText
+                                        android:id="@+id/name"
+                                        android:layout_marginTop="25dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="17dp"
+                                        android:textColor="@color/white_carbon"
+                                        android:background="@drawable/bckbtn"
+                                        android:textSize="14dp"
+                                        android:paddingLeft="5dp"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_marginTop="50dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/password"
+                                        android:textColor="@color/white_carbon"
+                                        android:fontFamily="@font/arcaderounded"
+                                        android:textSize="13dp"
+                                        android:shadowColor="@color/black_main"
+                                        android:shadowDx="5"
+                                        android:shadowDy="2"
+                                        android:shadowRadius="4"/>
+
+                                    <EditText
+                                        android:id="@+id/password"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="17dp"
+                                        android:textColor="@color/white_carbon"
+                                        android:background="@drawable/bckbtn"
+                                        android:textSize="14dp"
+                                        android:paddingLeft="5dp"/>
+
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="bottom">
+
+                                    <CheckBox
+                                        android:onClick="external"
+                                        android:id="@+id/chk_one"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/orange_main"
+                                        android:text="@string/save" />
+
+                                    <CheckBox
+                                        android:onClick="internal"
+                                        android:id="@+id/chk_two"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white_carbon"
+                                        android:text="@string/save_2"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/btnLogin"
+                                    android:onClick="logar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:backgroundTint="@color/btn_secondary"
+                                    android:text="@string/log_on"
+                                    android:textColor="@color/orange_main"
+                                    android:shadowColor="@color/black_main"
+                                    android:shadowDx="5"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="4"
+                                    android:fontFamily="@font/arcaderounded"/>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

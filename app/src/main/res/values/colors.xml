@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Colors -->
+    <color name="black_main">#000</color>
+    <color name="white_main">#fff</color>
+    <color name="white_carbon">#F8F8F8</color>
+    <color name="white_carbon_transparent">#ADF8F8F8</color>
+    <color name="orange_main">#FF8A00</color>
+    <color name="black_transparent">#5E000000</color>
+    <color name="black_transparenttwo">#9F000000</color>
+    <color name="blue_hall_trasparent">#86101444</color>
+
+    <!-- Colors for Splash Screen -->
+    <color name="black_splash">#E6050505</color>
+    <color name="purple_splash">#E6140E37</color>
+
+    <!-- Colors for The Hall -->
+    <color name="black_hall">#B3050505</color>
+    <color name="blue_hall">#B3101444</color>
+
+    <color name="bck_hall_black">#F5050505</color>
+    <color name="bck_hall_blue">#F8101444</color>
+
+        <!--Buttons-->
+    <color name="btn_primary">#050505</color>
+    <color name="btn_secondary">#101444</color>
+
+    <!-- Colors for Login -->
+    <color name="black_top">#0A0B12</color>
+    <color name="blue_top">#101444</color>
+
+    <color name="blue_radial">#F0131844</color>
+    <color name="black_radial">#F0000000</color>
+
+    <color name="black_login">#111115</color>
+    <color name="blue_login">#141A54</color>
+
+        <!-- Colors for Btn_Login and btn_Register -->
+    <color name="btn_purple">#3A3C65</color>
+    <color name="btn_bluecks">#070828</color>
+
+        <!-- Colors for TopBar Login/Register -->
+    <color name="black_topbar">#FA101444</color>
+    <color name="blue_topbar">#FA0A0B12</color>
+
+    <!-- Colors for Main Screen -->
+
+        <!-- Principal Colors -->
+    <color name="black_Mscreen">#23262B</color>
+    <color name="purple_Mscreen">#22285A</color>
+
+        <!-- Colors for Navbar -->
+    <color name="black_navbar">#0A0B12</color>
+    <color name="blue_navbar">#101444</color>
+
+        <!-- Colors for Panel -->
+    <color name="black_panel">#E6000000</color>
+    <color name="purple_panel">#E61E145C</color>
+
+        <!-- Colors for Sub_bar -->
+    <color name="pb_sub_bar">#22285A</color>
+    <color name="pw_sub_bar">#394364</color>
+
+        <!-- Colors for Icons -->
+    <color name="purple_more">#7479A0</color>
+    <color name="white_text">#A3FFFFFF</color>
+
+    <!-- Colors for Persons -->
+
+        <!-- Person_one -->
+    <color name="chun_one">#181A2C</color>
+    <color name="chun_two">#293285</color>
+    <color name="chun_three">#E6090B1F</color>
+
+    <color name="ryu">#00010E</color>
+    <color name="ryu_one">#510000</color>
+
+    <color name="menat_one">#5B0771</color>
+
+    <!--Sensor-->
+
+    <color name="blue_hall_sg">#D7070819</color>
+    <color name="blue_hall_sgs">#D7070707</color>
+
+</resources>

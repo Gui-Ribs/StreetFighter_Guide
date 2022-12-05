@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mainlinear"
+        android:scaleType="centerCrop"/-->
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/mainlinear">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/navbar"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bckmain"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/linearground"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/wel"
+                        android:textColor="@color/white_carbon"
+                        android:fontFamily="@font/arcadeint"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/naP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/arcadeint"
+                        android:text="Hello World!"
+                        android:textColor="@color/white_carbon"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt1"
+                    android:textColor="@color/white_carbon_transparent"
+                    android:fontFamily="@font/latob"
+                    android:textSize="20dp"
+                    android:shadowColor="@color/black_main"
+                    android:shadowDx="2"
+                    android:shadowDy="4"
+                    android:shadowRadius="10"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="15dp"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/imganv"
+                            android:scaleType="centerCrop"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rctanv"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt2"
+                            android:textColor="@color/white_carbon_transparent"
+                            android:fontFamily="@font/latob"
+                            android:textSize="20dp"/>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more"
+                    android:textColor="@color/purple_more"
+                    android:fontFamily="@font/laton"
+                    android:textSize="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_carbon_transparent"
+                    android:text="@string/txt3"
+                    android:fontFamily="@font/latob"
+                    android:textSize="20dp"
+                    android:shadowColor="@color/black_main"
+                    android:shadowDx="2"
+                    android:shadowDy="4"
+                    android:shadowRadius="10"/>
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp">
+
+                        <RelativeLayout
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="280dp"
+                                app:cardCornerRadius="30dp"
+                                android:layout_alignParentStart="true">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/imgquatro"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="280dp"
+                                app:cardCornerRadius="30dp"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/imgdois"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginRight="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="280dp"
+                                app:cardCornerRadius="30dp"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/imgtres"
+                                    android:scaleType="centerCrop"/>
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_carbon_transparent"
+                        android:textSize="20dp"
+                        android:text="@string/txt4"
+                        android:fontFamily="@font/latob"
+                        android:shadowColor="@color/black_main"
+                        android:shadowDx="2"
+                        android:shadowDy="4"
+                        android:shadowRadius="10"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            app:cardCornerRadius="20dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/linear_cone"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cone"
+                                android:scaleType="fitCenter"/>
+
+                            <TextView
+                                android:layout_marginBottom="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="bottom"
+                                android:text="@string/txt5"
+                                android:textSize="17dp"
+                                android:fontFamily="@font/latob"
+                                android:textColor="@color/white_carbon_transparent"
+                                android:shadowColor="@color/black_main"
+                                android:shadowDx="2"
+                                android:shadowDy="4"
+                                android:shadowRadius="10"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            app:cardCornerRadius="20dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ryu_linear"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ctwo"
+                                android:scaleType="fitCenter"/>
+
+                            <TextView
+                                android:layout_marginBottom="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="bottom"
+                                android:text="@string/txt6"
+                                android:textSize="17dp"
+                                android:fontFamily="@font/latob"
+                                android:textColor="@color/white_carbon_transparent"
+                                android:shadowColor="@color/black_main"
+                                android:shadowDx="2"
+                                android:shadowDy="4"
+                                android:shadowRadius="10"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            app:cardCornerRadius="20dp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/menat_one"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/cthree"
+                                android:scaleType="fitCenter"/>
+
+                            <TextView
+                                android:layout_marginBottom="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="bottom"
+                                android:text="@string/txt7"
+                                android:textSize="17dp"
+                                android:fontFamily="@font/latob"
+                                android:textColor="@color/white_carbon_transparent"
+                                android:shadowColor="@color/black_main"
+                                android:shadowDx="2"
+                                android:shadowDy="4"
+                                android:shadowRadius="10"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/header_file"/>
+
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
